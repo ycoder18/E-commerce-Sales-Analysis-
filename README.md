@@ -8,6 +8,16 @@ Wisdom Pets Medicine, an e-commerce and wholesale company for pet healthcare pro
 
 ---
 
+## 🎯 Objectives
+
+- Set up a GCP project and BigQuery environment  
+- Load CSV datasets into structured BigQuery tables  
+- Perform SQL-based data exploration and cleaning  
+- Analyze customer segments, product popularity, and pricing patterns  
+- Design a scalable schema for future analytics
+
+---
+
 ### 2️⃣ Tools & Technologies Used  
 
 | Tool/Service               | Purpose                              |
@@ -16,6 +26,7 @@ Wisdom Pets Medicine, an e-commerce and wholesale company for pet healthcare pro
 | **Google BigQuery**        | Data warehousing & SQL analytics     |
 | **Google Cloud Storage**   | Raw CSV storage                      |
 | **SQL**                    | Querying and business analysis       |
+| **Looker Studio**          | Interactive dashboards and visualization |
 | **CSV Files**              | Raw data sources                     |
 
 ---

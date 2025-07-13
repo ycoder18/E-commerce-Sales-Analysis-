@@ -1,4 +1,6 @@
-**Wisdom Pets Digital Transformation — GCP BigQuery Analytics Project**
+#Wisdom Pets Digital Transformation — GCP BigQuery Analytics Project
+
+
 ## 📁 Project Overview
 
 ### 1️⃣ Problem Statement  

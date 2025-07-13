@@ -3,22 +3,24 @@
 
 ## 📁 Project Overview
 
-### 1️⃣ Problem Statement  
-Wisdom Pets Medicine, an e-commerce and wholesale company for pet healthcare products, is undergoing a digital transformation. Their goal is to centralize and analyze raw sales, customer, and product data to gain actionable business insights. Our task is to migrate this data into **Google BigQuery**, structure it properly, and run analytical queries to support data-driven decisions.
+### 1️ Problem Statement  
+**Wisdom Pets Medicine** is a growing business (est. 2019) that sells pet supplements, treatment packages, and vaccines. Initially serving retail customers, the company later expanded into wholesale distribution. As part of its digital transformation, Wisdom Pets aims to centralize and analyze raw sales, customer, and product data to gain actionable business insights.
+In this project, we migrated their data into Google BigQuery, structured it for efficient querying, and performed analytical SQL queries to support data-driven decision-making.
 
 ---
 
-## 🎯 Objectives
+## 2 Objectives
 
 - Set up a GCP project and BigQuery environment  
 - Load CSV datasets into structured BigQuery tables  
 - Perform SQL-based data exploration and cleaning  
 - Analyze customer segments, product popularity, and pricing patterns  
 - Design a scalable schema for future analytics
+- design an interactive dashbord
 
 ---
 
-### 2️⃣ Tools & Technologies Used  
+### 3 Tools & Technologies Used  
 
 | Tool/Service               | Purpose                              |
 |----------------------------|--------------------------------------|
@@ -31,7 +33,7 @@ Wisdom Pets Medicine, an e-commerce and wholesale company for pet healthcare pro
 
 ---
 
-### 3️⃣ CSV Files & Schema  
+### 4 CSV Files & Schema  
 
 #### 📋 customers.csv  
 | Column Name        | Description                        |
@@ -68,3 +70,15 @@ Wisdom Pets Medicine, an e-commerce and wholesale company for pet healthcare pro
 | product_id        | Foreign key reference to products        |
 | quantity          | Quantity of product sold                 |
 | total_amount      | Final billed amount                      |
+
+---
+## 5 Project Overview
+
+**Wisdom Pets Medicine** is a growing business (est. 2019) that sells pet supplements, treatment packages, and vaccines. Initially serving retail customers, they have expanded into wholesale distribution and now seek better data-driven decisions.
+
+This project focuses on:
+- **Ingesting raw CSV data** into BigQuery
+- **Structuring datasets** (Products, Customers, Transactions)
+- **Analyzing sales performance** across retail and wholesale channels
+- **Deriving actionable insights** to support business strategy
+

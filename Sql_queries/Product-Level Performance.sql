@@ -55,7 +55,17 @@ JOIN `intro-to-bq-465716.wisdom_pets.products` p
 GROUP BY p.product_name, p.retail_price
 ORDER BY price_diff DESC;
 
+---------------------------------------------------
 
+--  breakdown of transaction types (purchase vs return):
+
+SELECT 
+  transaction_type,
+  COUNT(transaction_id) AS total_transactions,
+  ROUND(SUM(total_amount), 2) AS total_value
+FROM `intro-to-bq-465716.wisdom_pets.sales`
+GROUP BY transaction_type
+ORDER BY total_value DESC;
 
 
 

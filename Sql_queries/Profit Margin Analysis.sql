@@ -1,22 +1,20 @@
-# Profit Margin Analysis
-
--- Product Have High Discount But Low In Sales:
-
+-- ✅ Identify products with high discounts but low sales
+-- Useful for spotting inefficient discounting strategies
 SELECT 
   p.product_name,
   p.wholesale_discount_percentage,
-  ROUND(SUM(s.total_amount),0) AS total_sales
+  ROUND(SUM(s.total_amount), 0) AS total_sales
 FROM `intro-to-bq-465716.wisdom_pets.sales` s
 LEFT JOIN `intro-to-bq-465716.wisdom_pets.products` p 
-ON s.product_id = p.product_id
+  ON s.product_id = p.product_id
 GROUP BY p.product_name, p.wholesale_discount_percentage
 HAVING p.wholesale_discount_percentage > 20
 ORDER BY total_sales ASC;
 
----------------------------------------------------------
+-- ---------------------------------------------------------
 
--- Estimated Gross Margin Per Product:
-
+-- ✅ Estimate gross margin and profit per product
+-- Key for analyzing product-level profitability and unit margins
 SELECT 
   p.product_name,
   ROUND(p.retail_price, 2) AS retail_price,
@@ -32,10 +30,10 @@ JOIN `intro-to-bq-465716.wisdom_pets.products` p
 GROUP BY p.product_name, p.retail_price, p.wholesale_discount_percentage
 ORDER BY total_profit DESC;
 
----------------------------------------------------------------
+-- ---------------------------------------------------------------
 
--- Highest-Selling Product Generating Lowest Profits:
-
+-- ✅ Find high-selling products that generate the lowest profits
+-- Helps identify misleading revenue contributors
 WITH profitability AS (
   SELECT 
     p.product_name,
@@ -53,10 +51,10 @@ FROM profitability
 ORDER BY total_profit ASC
 LIMIT 5;
 
-----------------------------------------------------------------
+-- ----------------------------------------------------------------
 
--- Should discount strategies be adjusted?
-
+-- ✅ Evaluate performance by discount range (low, medium, high)
+-- Helps refine discount strategy to maximize revenue and profit
 SELECT 
   CASE 
     WHEN p.wholesale_discount_percentage <= 10 THEN 'Low Discount'
@@ -71,21 +69,3 @@ JOIN `intro-to-bq-465716.wisdom_pets.products` p
   ON s.product_id = p.product_id
 GROUP BY discount_range
 ORDER BY revenue DESC;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,5 @@
-#  Customer Behavior & Segmentation
-
--- Percentage Of Revenue Is from VIP Customers:
-
+-- ✅ Calculate total revenue and customer count by VIP status
+-- Helps measure how much revenue is driven by loyal (VIP) customers
 SELECT 
   c.vip_customer_flag,
   COUNT(DISTINCT s.customer_id) AS customer_count,
@@ -11,10 +9,10 @@ JOIN `intro-to-bq-465716.wisdom_pets.customers` c
   ON s.customer_id = c.customer_id
 GROUP BY c.vip_customer_flag;
 
-----------------------------------------------------
+-- --------------------------------------------------
 
---the average order value (AOV) for each customer type: 
-
+-- ✅ Calculate Average Order Value (AOV) by customer type
+-- Useful for comparing spend patterns between VIP and non-VIP segments
 SELECT 
   c.vip_customer_flag AS customer_type,
   ROUND(SUM(s.total_amount) / COUNT(DISTINCT s.transaction_id), 2) AS avg_order_value
@@ -23,10 +21,10 @@ JOIN `intro-to-bq-465716.wisdom_pets.customers` c
   ON s.customer_id = c.customer_id
 GROUP BY customer_type;
 
-----------------------------------------------------
+-- --------------------------------------------------
 
--- Most Profitable Region
-
+-- ✅ Identify top-performing postal regions by total sales
+-- Can inform location-based marketing and inventory strategies
 SELECT 
   c.postal_address,
   ROUND(SUM(s.total_amount), 2) AS total_sales
@@ -36,10 +34,10 @@ JOIN `intro-to-bq-465716.wisdom_pets.customers` c
 GROUP BY c.postal_address
 ORDER BY total_sales DESC;
 
-----------------------------------------------------
+-- --------------------------------------------------
 
--- Repeat Purchase Behavior OF Customer:
-
+-- ✅ Analyze customer lifetime and repeat behavior
+-- Measures engagement by comparing order frequency and duration
 SELECT 
   customer_id,
   COUNT(DISTINCT transaction_id) AS total_orders,
@@ -50,24 +48,3 @@ FROM `intro-to-bq-465716.wisdom_pets.sales`
 WHERE customer_id IS NOT NULL
 GROUP BY customer_id
 ORDER BY total_orders DESC;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

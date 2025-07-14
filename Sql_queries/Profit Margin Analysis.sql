@@ -1,3 +1,37 @@
+-- Monthly Revenue and MoM Growth by Location
+-- Step 1: Aggregate monthly revenue by location
+WITH monthly_sales AS (
+  SELECT
+    FORMAT_DATE('%Y-%m', DATE(s.transaction_date)) AS year_month,
+    c.postal_address AS location,
+    ROUND(SUM(s.total_amount), 2) AS monthly_revenue
+  FROM `intro-to-bq-465716.wisdom_pets.sales` s
+  JOIN `intro-to-bq-465716.wisdom_pets.customers` c
+    ON s.customer_id = c.customer_id
+  GROUP BY year_month, location
+)
+
+-- Step 2: Add MoM Growth Calculation
+SELECT
+  year_month,
+  location,
+  monthly_revenue,
+  ROUND(
+    SAFE_DIVIDE(
+      monthly_revenue - LAG(monthly_revenue) OVER (
+        PARTITION BY location
+        ORDER BY year_month
+      ),
+      LAG(monthly_revenue) OVER (
+        PARTITION BY location
+        ORDER BY year_month
+      )
+    ) * 100, 2
+  ) AS mom_growth_percentage
+FROM monthly_sales
+ORDER BY location, year_month;
+
+-- ------------------------------------------------------
 -- ✅ Identify products with high discounts but low sales
 -- Useful for spotting inefficient discounting strategies
 SELECT 

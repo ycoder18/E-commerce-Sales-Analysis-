@@ -22,73 +22,105 @@ This report presents a comprehensive performance review of **Wisdom Pets’** e-
 
 ### 1. Sales Trend Analysis
 
-We analyzed the revenue movement across time to identify sales patterns, peaks, and low-performing periods. The data shows that:
+We analyzed the revenue over time to identify sales peaks, dips, and weekly behavior:
 
-- **Peak Revenue Periods**: November and December consistently generated the highest revenue. November recorded peak sales totaling **$250K**, likely due to seasonal demand and year-end promotions.
-- **Revenue Drop Zones**: January and February had significantly lower revenue, with totals of **$68K** and **$72.5K** respectively, suggesting a post-holiday slowdown.
-- **Weekly Trends**: Sales were higher on weekends (especially Saturdays), averaging **$12.5K per Saturday**.
+#### 🔺 Peak Revenue Periods
+- **September 2022** recorded the highest revenue at **$9.33M**
+- **December 2022** and **June 2023** also performed well, each exceeding **$8.7M**
+- End-of-quarter and year-end months showed stronger performance
 
-**Recommended Actions:**
-- Launch Q1 marketing campaigns to boost off-peak periods  
-- Implement weekday flash sales to even out traffic  
-- Align inventory with high-demand months  
+#### 🔻 Revenue Drop Zones
+- **February 2023** was the lowest month with **$8.08M**
+- **November 2022** followed with **$7.83M**
+
+#### 📅 Weekly Trends
+- **Monday** and **Thursday** had higher avg. sales per transaction (~$1,710)
+- **Weekends** showed **no significant uplift**, contrary to expectations
+
+#### ✅ Recommended Actions
+- Launch marketing in **February** and **November**
+- Introduce **weekday-exclusive offers**
+- Shift **ad spend to start/end of week**
 
 ---
 
 ### 2. Product-Level Performance
 
-We evaluated products based on sales volume, revenue contribution, and customer ratings.
+Catalog performance was evaluated by volume, revenue, and rating.
 
-- **Best-Sellers**: Products in the "Care" category (e.g., grooming kits, supplements) led in revenue and units sold. The top product, *Omega Chew Supplement*, sold **2,300+ units**, generating **$57.5K**.
-- **Revenue by Category**: The "Care" category contributed **$525K**, followed by "Vaccines" at **$312K**. Vaccines had fewer transactions but higher average order values (**$75**).
-- **Performance Mismatch**: Low-rated items like *Anti-Itch Spray* (rating: 2.9) still sold **1,200+ units**, possibly due to necessity or pricing.
+#### 🏆 Best-Sellers
+- **Dog Vaccination Package**: $75.3M revenue, 1.44M units
+- **Parasite Treatment Package**: $69.85M, 1.3M+ units
+- **Calm Cat Anxiety Relief Spray**: 2M+ units, $15.4M (rated 4.0)
 
-**Recommended Actions:**
-- Bundle top-selling products to increase AOV  
-- Promote underperforming high-rated items  
-- Improve product content for low-rated bestsellers  
+#### 💵 Revenue by Category
+- **Vaccines**: $148.6M  
+- **Care**: $120M  
+- **Supplements**: $71.9M  
+- **Accessories**: $26.6M  
+
+### ⚠️ Performance Mismatch
+- **High sales + low rating** for Calm Cat Spray indicates **limited alternatives**
+
+#### ✅ Recommended Actions
+- Bundle **bestsellers** (e.g., Vaccine + Care) to boost AOV
+- Promote **high-rated underperformers**
+- Audit **reviews** of popular but poorly rated items
 
 ---
 
 ### 3. Strategic Pricing & Profitability Review
 
-This section focused on analyzing how pricing and discount strategies affect profitability.
+We analyzed the impact of discounting and category pricing.
 
-- **High-Volume, Low-Profit Products**: 5 products with **25–30% discounts** brought in **$84K** in revenue but had a margin of only **12%**.
-- **Discount Effectiveness**: Items with lower discounts (≤10%) like *Dental Chew Treats* yielded better net profit than heavier discounts.
-- **Category Margins**: "Care" products averaged **22%** profit margin, while accessories ranged from **10–18%**, showing greater pricing inconsistency.
+#### 📉 High-Volume, Low-Profit Products
+- 5 products with **30% discounts** brought **$113M+**, but with **thin margins**
+- Example: Parasite Treatment Package earned **$69.8M from 11,591 transactions**
 
-**Recommended Actions:**
-- Prioritize margins when offering discounts  
-- Use customer-tiered pricing for loyalty members  
-- A/B test pricing sensitivity for key SKUs  
+### 💰 Category Margins
+- **Vaccines**: 38.6% profit margin  
+- **Accessories/Supplements**: ~6% → shows pricing issues
+
+#### ✅ Recommended Actions
+- Avoid **heavy discounts** on top sellers
+- Use **tiered or loyalty discounts** for price-sensitive SKUs
+- Test **price sensitivity** on high-volume, low-margin products
 
 ---
 
 ### 4. Customer Behavior & Segmentation
 
-Segmentation helped us analyze differences between VIP and regular customers.
+Analyzed differences between VIPs and non-VIPs plus geographic sales insights.
 
-- **VIP Revenue Share**: VIPs contributed **40%** of total revenue (**$480K of $1.2M**), with higher AOV (**$92 vs $56**) and more frequent purchases (**4.2 vs 2.3**).
-- **Non-VIP Trends**: Regular customers had a **34% churn rate** and spent only **$120/year** on average.
-- **Geographical Insights**: Metro postal codes like **90210** and **94103** each generated **$45K+**, while some regions brought in less than **$8K/year**.
+#### 👑 VIP Revenue Share
+- **Avg spend per VIP**: ~$6.3M across ~3,176 transactions
+- **Top VIP** spent: $27.96M
+- VIPs are few but generate **disproportionate revenue**
 
-**Recommended Actions:**
-- Expand VIP program with rewards and perks  
-- Launch geo-targeted campaigns for low-revenue regions  
-- Re-engage dormant customers using personalized offers  
+#### 🧍 Non-VIP Trends
+- Avg spend: ~$818K  
+- Higher churn risk and fewer purchases
+
+#### 🌍 Geographical Insights
+- Top zip codes (e.g., **Pittsburgh, PA**, **Washington, DC**) → $23M–$27M each
+- Few areas earn under $8K/year → **urban concentration**
+
+#### ✅ Recommended Actions
+- Expand VIP perks: **priority booking, cashback, auto-refill**
+- Launch **geo-targeted** marketing in low-performing zips
+- Re-engage **non-VIPs** with <3 orders in 6 months
 
 ---
 
 ### 5. Business Growth Opportunities
 
-Key data-driven improvements were identified:
+Based on the insights, the following initiatives are recommended:
 
-- **Seasonal Campaigns**: Use gift cards and loyalty points in Q1 to offset post-holiday slumps; target a **15% revenue lift**
-- **Bundling Strategy**: Sell complementary products as kits to boost AOV by **18–22%**
-- **Loyalty Expansion**: Offer previews, discounts, and cashback to increase VIP retention by **10–12%**
-- **Smart Discounting**: Focus discounts on elastic, high-margin products; potential **$25K+ annual profit boost**
-- **Portfolio Enhancement**: Launch **8–10 new product lines** in low-competition categories like natural remedies
+- 🎁 **Seasonal Campaigns**: Use gift cards & loyalty bonuses in Feb/Nov
+- 📦 **Bundling Strategy**: Vaccine + Care bundles → boost AOV by 18–22%
+- 👑 **VIP Expansion**: Early access & previews → retention +10–12%
+- 💡 **Smart Discounting**: Promo only **high-margin elastic** items → +$25K profit
+- 🧪 **Portfolio Enhancement**: Launch new products in **Accessories & Supplements**
 
 ---
 

@@ -116,11 +116,11 @@ Analyzed differences between VIPs and non-VIPs plus geographic sales insights.
 
 Based on the insights, the following initiatives are recommended:
 
-- 🎁 **Seasonal Campaigns**: Use gift cards & loyalty bonuses in Feb/Nov
-- 📦 **Bundling Strategy**: Vaccine + Care bundles → boost AOV by 18–22%
-- 👑 **VIP Expansion**: Early access & previews → retention +10–12%
-- 💡 **Smart Discounting**: Promo only **high-margin elastic** items → +$25K profit
-- 🧪 **Portfolio Enhancement**: Launch new products in **Accessories & Supplements**
+-  **Seasonal Campaigns**: Use gift cards & loyalty bonuses in Feb/Nov
+-  **Bundling Strategy**: Vaccine + Care bundles → boost AOV by 18–22%
+-  **VIP Expansion**: Early access & previews → retention +10–12%
+-  **Smart Discounting**: Promo only **high-margin elastic** items → +$25K profit
+-  **Portfolio Enhancement**: Launch new products in **Accessories & Supplements**
 
 ---
 
